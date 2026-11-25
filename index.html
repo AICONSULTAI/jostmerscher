@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="de" data-type="service" data-room="wand">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jost Merscher – Bilder, Objekte, Collagen, Romane</title>
+<meta name="description" content="Jost Merscher, geboren 1952 in Montreal, Studium der Mathematik und Philosophie. Bilder, Objekte und Collagen sowie drei Romane bei der Ganymed Edition.">
+<link rel="canonical" href="https://www.jostmerscher.de/">
+<meta name="page-type" content="service">
+<meta name="site-kind" content="other">
+<meta name="theme-color" content="#f5f5f3">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Jost Merscher">
+<meta property="og:title" content="Jost Merscher – Bilder, Objekte, Collagen, Romane">
+<meta property="og:description" content="Bilder, Objekte und Collagen. Romane bei der Ganymed Edition.">
+<meta property="og:url" content="https://www.jostmerscher.de/">
+<meta property="og:image" content="https://www.jostmerscher.de/assets/share.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/source-serif-4-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/site.css?v=26">
+<script>
+  /* Vor dem ersten Bild: JS-Klasse und, beim ersten Besuch der Sitzung, die Eroeffnung */
+  (function () {
+    var d = document.documentElement; d.classList.add('js');
+    var calm = matchMedia('(prefers-reduced-motion: reduce)').matches, seen = false;
+    try { seen = sessionStorage.getItem('jm-intro') === '1'; } catch (e) {}
+    if (!calm && !seen) { d.classList.add('intro'); setTimeout(function () { d.classList.remove('intro'); }, 4000); }
+  })();
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://www.jostmerscher.de/#person",
+  "name": "Jost Merscher",
+  "url": "https://www.jostmerscher.de/",
+  "birthDate": "1952",
+  "birthPlace": { "@type": "Place", "name": "Montreal, Kanada" },
+  "jobTitle": "Bildender Künstler und Autor",
+  "knowsAbout": ["Malerei", "Objektkunst", "Collage", "Literatur"],
+  "sameAs": ["https://www.ganymed-edition.de/autoren-bei-ganymed/jost-merscher/"],
+  "workExample": [
+    { "@type": "Book", "name": "Tage der Tauben", "author": [{ "@id": "https://www.jostmerscher.de/#person" }, { "@type": "Person", "name": "Martin Murch" }], "datePublished": "2018", "isbn": "978-3-946223-65-8", "numberOfPages": 268, "bookFormat": "https://schema.org/Hardcover", "inLanguage": "de", "publisher": { "@type": "Organization", "name": "Ganymed Edition" }, "url": "https://www.ganymed-edition.de/buch-infos/tage-der-tauben/" },
+    { "@type": "Book", "name": "Letzter Reigen", "alternativeHeadline": "Roman in achtzehn Begegnungen", "author": { "@id": "https://www.jostmerscher.de/#person" }, "datePublished": "2020", "isbn": "978-3-946223-85-6", "numberOfPages": 152, "bookFormat": "https://schema.org/Hardcover", "inLanguage": "de", "publisher": { "@type": "Organization", "name": "Ganymed Edition" }, "url": "https://www.ganymed-edition.de/buch-infos/letzter-reigen/" },
+    { "@type": "Book", "name": "Vulkane, Paradiese und andere Zumutungen", "alternativeHeadline": "Die Abenteuer des Dr. Rochus Moje I", "author": { "@id": "https://www.jostmerscher.de/#person" }, "datePublished": "2024", "isbn": "978-3-949815-00-3", "numberOfPages": 276, "bookFormat": "https://schema.org/Hardcover", "inLanguage": "de", "publisher": { "@type": "Organization", "name": "Ganymed Edition" }, "url": "https://www.ganymed-edition.de/buch-infos/vulkane-paradiese/" }
+  ]
+}
+</script>
+</head>
+<body>
+<!-- Version 2 · 25.11.2026 · Leitidee: die Website als Gang durch eine Ausstellung.
+     Eingangswand mit Wandtext, die Hängung als Wand, an der man entlanggeht (alle Werke auf einer Mittellinie),
+     Werkverzeichnis, dann Räume mit eigener Wandfarbe: Bibliothek (Bücher), Abend (Person, Kontakt).
+     Bewegung: Eröffnung (Rahmen zeichnet sich, Werk wird sichtbar, Name steigt auf), Werke werden beim Vorbeigehen „gehängt“,
+     das Werk wandert von der Wand in die Vollansicht und zurück, Räume wechseln die Wandfarbe. -->
+<a class="skip" href="#inhalt">Zum Inhalt springen</a>
+
+<header class="site-header">
+  <div class="bar">
+    <a class="brand" href="#top" data-intro="fade">Jost Merscher</a>
+    <nav class="nav" aria-label="Hauptnavigation" data-intro="fade">
+      <a href="#werke">Werke</a>
+      <a href="#verzeichnis">Verzeichnis</a>
+      <a href="#buecher">Bücher</a>
+      <a href="#person">Person</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+  </div>
+</header>
+
+<main id="inhalt">
+  <!-- Die Wand. Desktop: man scrollt nach unten und geht an der Wand entlang. Telefon und ohne Skript: untereinander. -->
+  <section class="wall" id="werke" data-room="wand" aria-label="Werke">
+    <span id="top" class="anchor-top"></span>
+    <div class="wall-sticky">
+      <div class="wall-track" id="track">
+        <div class="wall-intro">
+          <h1 class="title" id="name" aria-label="Jost Merscher"><span class="line"><span class="word" aria-hidden="true">Jost</span></span><span class="line"><span class="word" aria-hidden="true">Merscher</span></span></h1>
+          <div class="wall-text" data-intro="fade">
+            <p class="lead">Bilder, Objekte, Collagen. Und Romane.</p>
+            <p class="small">Geboren 1952 in Montreal. Studium der Mathematik und Philosophie.</p>
+          </div>
+          <a class="walk-hint" href="#verzeichnis" data-intro="fade"><span>Entlang der Wand</span>
+            <svg viewBox="0 0 40 12" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M0 6h38M33 1l5 5-5 5"/></svg></a>
+        </div>
+
+        <!-- Je Werk: --h Höhe auf der Wand (vh), --gap Abstand davor (vw). Dateien in assets/works: -800, -1200 und groß. -->
+        <figure class="hang" data-cat="bild" style="--ar:.789;--h:66;--gap:4">
+          <a class="art" href="assets/works/werk-01.jpg" data-cursor="Ansehen">
+            <img src="assets/works/werk-01-1200.jpg" srcset="assets/works/werk-01-800.jpg 632w, assets/works/werk-01-1200.jpg 947w" sizes="(min-width: 900px) 45vw, 86vw" width="947" height="1200" alt="Platzhalter für ein Bild: Farbfelder in Ocker, Grau und Braun" fetchpriority="high">
+          </a>
+          <figcaption class="label"><b>Platzhalter I</b><span>Bild</span><span>Technik, Maße, Jahr folgen</span></figcaption>
+        </figure>
+        <figure class="hang" data-cat="collage" style="--ar:1;--h:44;--gap:9">
+          <a class="art" href="assets/works/werk-02.jpg" data-cursor="Ansehen"><img src="assets/works/werk-02-1200.jpg" srcset="assets/works/werk-02-800.jpg 800w, assets/works/werk-02-1200.jpg 1200w" sizes="(min-width: 900px) 45vw, 86vw" width="1200" height="1200" loading="lazy" alt="Platzhalter für eine Collage: gerissene Papiere in Grau und Ocker mit grauem Kreis"></a>
+          <figcaption class="label"><b>Platzhalter II</b><span>Collage</span><span>Technik, Maße, Jahr folgen</span></figcaption>
+        </figure>
+        <figure class="hang" data-cat="objekt" style="--ar:.8;--h:54;--gap:8">
+          <a class="art" href="assets/works/werk-03.jpg" data-cursor="Ansehen"><img src="assets/works/werk-03-1200.jpg" srcset="assets/works/werk-03-800.jpg 640w, assets/works/werk-03-1200.jpg 960w" sizes="(min-width: 900px) 45vw, 86vw" width="960" height="1200" loading="lazy" alt="Platzhalter für ein Objekt: zwei gestapelte Blöcke mit dünnem Stab"></a>
+          <figcaption class="label"><b>Platzhalter III</b><span>Objekt</span><span>Material, Maße, Jahr folgen</span></figcaption>
+        </figure>
+        <figure class="hang" data-cat="bild" style="--ar:1.357;--h:46;--gap:8">
+          <a class="art" href="assets/works/werk-04.jpg" data-cursor="Ansehen"><img src="assets/works/werk-04-1200.jpg" srcset="assets/works/werk-04-800.jpg 800w, assets/works/werk-04-1200.jpg 1200w" sizes="(min-width: 900px) 45vw, 86vw" width="1200" height="884" loading="lazy" alt="Platzhalter für ein Bild: Farbfelder in Oxidrot und Ocker"></a>
+          <figcaption class="label"><b>Platzhalter IV</b><span>Bild</span><span>Technik, Maße, Jahr folgen</span></figcaption>
+        </figure>
+        <figure class="hang" data-cat="collage" style="--ar:.757;--h:60;--gap:9">
+          <a class="art" href="assets/works/werk-05.jpg" data-cursor="Ansehen"><img src="assets/works/werk-05-1200.jpg" srcset="assets/works/werk-05-800.jpg 605w, assets/works/werk-05-1200.jpg 908w" sizes="(min-width: 900px) 45vw, 86vw" width="908" height="1200" loading="lazy" alt="Platzhalter für eine Collage: helle Papiere mit dunklem Kreis und braunem Winkel"></a>
+          <figcaption class="label"><b>Platzhalter V</b><span>Collage</span><span>Technik, Maße, Jahr folgen</span></figcaption>
+        </figure>
+        <figure class="hang" data-cat="bild" style="--ar:1;--h:40;--gap:8">
+          <a class="art" href="assets/works/werk-06.jpg" data-cursor="Ansehen"><img src="assets/works/werk-06-1200.jpg" srcset="assets/works/werk-06-800.jpg 800w, assets/works/werk-06-1200.jpg 1200w" sizes="(min-width: 900px) 45vw, 86vw" width="1200" height="1200" loading="lazy" alt="Platzhalter für ein Bild: zwei braune Farbfelder"></a>
+          <figcaption class="label"><b>Platzhalter VI</b><span>Bild</span><span>Technik, Maße, Jahr folgen</span></figcaption>
+        </figure>
+        <figure class="hang" data-cat="objekt" style="--ar:1.231;--h:44;--gap:9">
+          <a class="art" href="assets/works/werk-07.jpg" data-cursor="Ansehen"><img src="assets/works/werk-07-1200.jpg" srcset="assets/works/werk-07-800.jpg 800w, assets/works/werk-07-1200.jpg 1200w" sizes="(min-width: 900px) 45vw, 86vw" width="1200" height="975" loading="lazy" alt="Platzhalter für ein Objekt: drei gestapelte Blöcke vor grauem Grund"></a>
+          <figcaption class="label"><b>Platzhalter VII</b><span>Objekt</span><span>Material, Maße, Jahr folgen</span></figcaption>
+        </figure>
+        <figure class="hang" data-cat="collage" style="--ar:1.407;--h:48;--gap:8">
+          <a class="art" href="assets/works/werk-08.jpg" data-cursor="Ansehen"><img src="assets/works/werk-08-1200.jpg" srcset="assets/works/werk-08-800.jpg 800w, assets/works/werk-08-1200.jpg 1200w" sizes="(min-width: 900px) 45vw, 86vw" width="1200" height="853" loading="lazy" alt="Platzhalter für eine Collage: Papiere in Schwarz, Ocker und Rot mit dunklem Kreis"></a>
+          <figcaption class="label"><b>Platzhalter VIII</b><span>Collage</span><span>Technik, Maße, Jahr folgen</span></figcaption>
+        </figure>
+        <figure class="hang" data-cat="bild" style="--ar:.75;--h:62;--gap:9">
+          <a class="art" href="assets/works/werk-09.jpg" data-cursor="Ansehen"><img src="assets/works/werk-09-1200.jpg" srcset="assets/works/werk-09-800.jpg 600w, assets/works/werk-09-1200.jpg 900w" sizes="(min-width: 900px) 45vw, 86vw" width="900" height="1200" loading="lazy" alt="Platzhalter für ein Bild: Farbfelder in Rot, Grau und Grüngrau"></a>
+          <figcaption class="label"><b>Platzhalter IX</b><span>Bild</span><span>Technik, Maße, Jahr folgen</span></figcaption>
+        </figure>
+        <figure class="hang" data-cat="collage" style="--ar:1;--h:38;--gap:8">
+          <a class="art" href="assets/works/werk-10.jpg" data-cursor="Ansehen"><img src="assets/works/werk-10-1200.jpg" srcset="assets/works/werk-10-800.jpg 800w, assets/works/werk-10-1200.jpg 1200w" sizes="(min-width: 900px) 45vw, 86vw" width="1200" height="1200" loading="lazy" alt="Platzhalter für eine Collage: schwarzes und ockerfarbenes Papier mit braunem Kreis"></a>
+          <figcaption class="label"><b>Platzhalter X</b><span>Collage</span><span>Technik, Maße, Jahr folgen</span></figcaption>
+        </figure>
+        <figure class="hang" data-cat="objekt" style="--ar:.778;--h:56;--gap:9">
+          <a class="art" href="assets/works/werk-11.jpg" data-cursor="Ansehen"><img src="assets/works/werk-11-1200.jpg" srcset="assets/works/werk-11-800.jpg 622w, assets/works/werk-11-1200.jpg 933w" sizes="(min-width: 900px) 45vw, 86vw" width="933" height="1200" loading="lazy" alt="Platzhalter für ein Objekt: hoher Stapel aus Blöcken"></a>
+          <figcaption class="label"><b>Platzhalter XI</b><span>Objekt</span><span>Material, Maße, Jahr folgen</span></figcaption>
+        </figure>
+        <figure class="hang" data-cat="bild" style="--ar:1.6;--h:42;--gap:9">
+          <a class="art" href="assets/works/werk-12.jpg" data-cursor="Ansehen"><img src="assets/works/werk-12-1200.jpg" srcset="assets/works/werk-12-800.jpg 800w, assets/works/werk-12-1200.jpg 1200w" sizes="(min-width: 900px) 45vw, 86vw" width="1200" height="750" loading="lazy" alt="Platzhalter für ein Bild: Farbfelder in Braungrau und Grüngrau"></a>
+          <figcaption class="label"><b>Platzhalter XII</b><span>Bild</span><span>Technik, Maße, Jahr folgen</span></figcaption>
+        </figure>
+
+        <div class="wall-end">
+          <p>Alle Werke, nach Art geordnet, stehen im Verzeichnis.</p>
+          <a class="text-link" href="#verzeichnis"><span>Zum Verzeichnis</span>
+            <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M7 2v10M2.5 7.5 7 12l4.5-4.5"/></svg></a>
+        </div>
+      </div>
+
+      <div class="wall-meter" aria-hidden="true">
+        <span class="meter-count"><span id="meter-now">00</span> / <span id="meter-all">12</span></span>
+        <span class="meter-line"><span id="meter-fill"></span></span>
+      </div>
+    </div>
+  </section>
+
+  <section class="index" id="verzeichnis" data-room="wand" aria-labelledby="verzeichnis-h">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="verzeichnis-h" data-rise>Verzeichnis</h2>
+        <div class="filter" role="group" aria-label="Verzeichnis filtern">
+          <button type="button" aria-pressed="true" data-filter="alle">Alle<span class="count"></span></button>
+          <button type="button" aria-pressed="false" data-filter="bild">Bilder<span class="count"></span></button>
+          <button type="button" aria-pressed="false" data-filter="objekt">Objekte<span class="count"></span></button>
+          <button type="button" aria-pressed="false" data-filter="collage">Collagen<span class="count"></span></button>
+        </div>
+      </div>
+      <!-- Die Zeilen baut site.js aus den Werken der Wand; ohne Skript bleibt die Wand die Liste. -->
+      <ol class="rows" id="rows" aria-label="Werkverzeichnis"></ol>
+    </div>
+    <div class="peek" aria-hidden="true"><img src="assets/works/werk-01-800.jpg" alt="" width="632" height="800"></div>
+  </section>
+
+  <section class="library" id="buecher" data-room="bibliothek" aria-labelledby="buecher-h">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <h2 id="buecher-h" data-rise>Bücher</h2>
+          <p class="section-note">Drei Romane, erschienen bei der Ganymed Edition in Hannover.</p>
+        </div>
+      </div>
+      <ul class="books">
+        <li class="book" style="--i:0">
+          <a class="book3d" href="https://www.ganymed-edition.de/buch-infos/tage-der-tauben/" aria-label="Tage der Tauben beim Verlag ansehen" style="--ba:570/845">
+            <span class="pages" aria-hidden="true"><span class="leaf">Leseprobe und Bestellung beim Verlag</span></span>
+            <span class="cover" aria-hidden="true"><img src="assets/books/tauben.jpg" width="570" height="845" alt="" loading="lazy"></span>
+          </a>
+          <div class="book-info">
+            <h3>Tage der Tauben</h3>
+            <p class="book-meta">2018 · mit Martin Murch · 268 Seiten</p>
+            <p class="book-text">Über Nacht steht ein weißer Kubus in Hannover, und die Stadt gerät aus dem Takt.</p>
+          </div>
+        </li>
+        <li class="book" style="--i:1">
+          <a class="book3d" href="https://www.ganymed-edition.de/buch-infos/letzter-reigen/" aria-label="Letzter Reigen beim Verlag ansehen" style="--ba:640/1005">
+            <span class="pages" aria-hidden="true"><span class="leaf">Leseprobe und Bestellung beim Verlag</span></span>
+            <span class="cover" aria-hidden="true"><img src="assets/books/reigen.jpg" width="640" height="1005" alt="" loading="lazy"></span>
+          </a>
+          <div class="book-info">
+            <h3>Letzter Reigen</h3>
+            <p class="book-meta">2020 · 152 Seiten</p>
+            <p class="book-text">Achtzehn Menschen begegnen sich paarweise, einer gibt den Reigen an den nächsten weiter. Die Tauben sind immer dabei.</p>
+          </div>
+        </li>
+        <li class="book" style="--i:2">
+          <a class="book3d" href="https://www.ganymed-edition.de/buch-infos/vulkane-paradiese/" aria-label="Vulkane, Paradiese und andere Zumutungen beim Verlag ansehen" style="--ba:640/1026">
+            <span class="pages" aria-hidden="true"><span class="leaf">Leseprobe und Bestellung beim Verlag</span></span>
+            <span class="cover" aria-hidden="true"><img src="assets/books/vulkane.jpg" width="640" height="1026" alt="" loading="lazy"></span>
+          </a>
+          <div class="book-info">
+            <h3>Vulkane, Paradiese und andere Zumutungen</h3>
+            <p class="book-meta">2024 · 276 Seiten</p>
+            <p class="book-text">Dr. Rochus Moje will in Chicago eine Firma kaufen. Ein Vulkan auf Island und ein Schiff auf den Azoren schicken ihn auf einen anderen Heimweg.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="person" id="person" data-room="abend" aria-labelledby="person-h">
+    <div class="wrap">
+      <h2 id="person-h" data-rise>Zur Person</h2>
+      <p class="statement" data-words>Mit Flaubert und Heidegger: Die Person trägt wenig zu den Bildern und Büchern bei. Sie stehen für sich.</p>
+      <dl class="facts">
+        <div><dt>1952</dt><dd>geboren in Montreal</dd></div>
+        <div><dt>Studium</dt><dd>Mathematik und Philosophie</dd></div>
+        <div><dt>Werk</dt><dd>Bilder, Objekte, Collagen</dd></div>
+        <div><dt>Romane</dt><dd><i>Tage der Tauben</i> (2018, mit Martin Murch), <i>Letzter Reigen</i> (2020), <i>Vulkane, Paradiese und andere Zumutungen</i> (2024), alle bei der Ganymed Edition</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="contact" id="kontakt" data-room="abend" aria-labelledby="kontakt-h">
+    <div class="wrap">
+      <h2 id="kontakt-h" data-rise>Kontakt</h2>
+      <p class="contact-note">Anfragen zu Werken und Ausstellungen bitte per E-Mail.</p>
+      <a class="mail" href="mailto:kontakt@jostmerscher.de" data-roll>kontakt@jostmerscher.de</a>
+      <p class="contact-side">Die Bücher gibt es im Buchhandel und direkt bei der <a href="https://www.ganymed-edition.de/autoren-bei-ganymed/jost-merscher/">Ganymed Edition</a>.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer" data-room="abend">
+  <div class="wrap">
+    <span>© 2026 Jost Merscher</span>
+    <nav aria-label="Rechtliches">
+      <a href="impressum.html">Impressum</a>
+      <a href="datenschutz.html">Datenschutz</a>
+    </nav>
+  </div>
+</footer>
+
+<div class="draft" role="note"><span><strong>Entwurf.</strong> Alle Abbildungen sind Platzhalter.</span><button type="button" aria-label="Hinweis ausblenden">
+  <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M3 3l6 6M9 3 3 9"/></svg></button></div>
+
+<div class="cursor" aria-hidden="true"><span></span></div>
+
+<dialog class="viewer" id="viewer" aria-label="Werkansicht">
+  <div class="viewer-bg"></div>
+  <div class="viewer-top">
+    <span class="viewer-count" aria-live="polite"></span>
+    <button class="icon-btn viewer-close" type="button" aria-label="Ansicht schließen">
+      <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M5 5l10 10M15 5 5 15"/></svg>
+    </button>
+  </div>
+  <div class="viewer-stage">
+    <img class="viewer-img" src="assets/works/werk-01-1200.jpg" alt="" width="947" height="1200">
+  </div>
+  <div class="viewer-bottom">
+    <div class="viewer-caption"><h3></h3><p></p></div>
+    <div class="viewer-nav">
+      <button class="icon-btn viewer-prev" type="button" aria-label="Vorheriges Werk">
+        <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M12.5 4.5 7 10l5.5 5.5"/></svg>
+      </button>
+      <button class="icon-btn viewer-next" type="button" aria-label="Nächstes Werk">
+        <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M7.5 4.5 13 10l-5.5 5.5"/></svg>
+      </button>
+    </div>
+  </div>
+</dialog>
+
+<svg class="intro-frame" aria-hidden="true"><rect x="0.5" y="0.5" fill="none" stroke="currentColor" stroke-width="1" vector-effect="non-scaling-stroke"/></svg>
+
+<script src="assets/site.js?v=26" defer></script>
+</body>
+</html>

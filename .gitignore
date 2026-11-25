@@ -1,0 +1,11 @@
+# Arbeitsdateien, nicht Teil der Website
+.cap/
+.impeccable/
+.taste-skill/
+.claude/
+shots/
+tools/capture.mjs
+versionen/
+jostmerscher/
+*.zip
+PLAN_Hosting_und_Umsetzung.md
